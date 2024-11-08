@@ -1,0 +1,175 @@
+/* CSS */
+:root {
+  --color-bg-dark: #0a0a0a;
+  --color-bg-gray: #18181b;
+  --color-primary-electric: #0ff;
+  --color-secondary-electric: #f0f;
+  --color-accent-electric: #0f0;
+  --color-text-light: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-bg-dark);
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar__title {
+  margin-left: 0.5rem;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__item {
+  margin-left: 1.5rem;
+}
+
+.navbar__link {
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.navbar__link:hover {
+  color: var(--color-primary-electric);
+}
+
+.navbar__link--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary-electric);
+}
+
+/* INFO TORNEO */
+.container__info{
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-bg-dark);
+  width: 100%;
+}
+
+.tournament-info{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background-color: var(--color-bg-dark);
+}
+
+/* ----------------- */
+.calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-bg-gray);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  width: 540px;
+  height: 400px;  
+}
+
+.container__calendar-matches{
+  padding: 1rem;
+  height: 100%;
+}
+
+/* ul */
+.calendar__matches {
+  list-style: none;
+  padding: 0;
+}
+
+/* li */
+.calendar__match{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid rgb(63, 63, 63);
+}
+
+/* hora encuentro */
+.calendar__match-time{
+  color: #e0e0e0;
+}
+
+/* equipos enfrentados */
+.calendar__match-teams{
+  color: #d4d4d4;
+}
+
+/* ----------------- */
+.standings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-bg-gray);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  width: 380px;
+  height: 400px;  
+}
+
+.standings__list {
+  list-style: none;
+  padding: 0;
+}
+
+.standings__item {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: var(--color-text-light);
+  border-bottom: 1px solid var(--color-text-muted);
+}
+
+/* ------------- */
+.scroll-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+}
