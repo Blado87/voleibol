@@ -4,79 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Torneo de Voleibol</title>
+  <title>Voleibol</title>
   <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="page">
-  <header class="navbar">
-    <div class="navbar__container">
-      <h1 class="navbar__title">Torneo de Voleibol</h1>
-      <nav class="navbar__links">
-        <a href="index.html" class="navbar__link">Inicio</a>
-        <a href="partidos.html" class="navbar__link">Partidos</a>
-        <a href="tabla.html" class="navbar__link">Tabla de Posiciones</a>
-      </nav>
+<body>
+  <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar__content">
+        <h1 class="navbar__title">Voleibol</h1>
+      </div>
+    </nav>
+
+
+    <div class="card">
+      <!-- Título principal -->
+      <h2 class="card__title">HOY</h2>
+      <!-- Fecha -->
+      <p class="card__date">Martes, 14 de diciembre 2025</p>
+  
+      <!-- Lista de encuentros -->
+      <ul class="card__matches">
+        <!-- Encuentro 1 -->
+        <li class="card__match">
+          <img src="/assets/img/logos/L (1).png" alt="Logo Equipo A" class="card__logo">
+          <span class="card__team">HALCONES</span>
+          <span class="card__vs">VS</span>
+          <span class="card__team">PUMAS DEL NORTE</span>
+          <img src="/assets/img/logos/L (2).png" alt="Logo Equipo B" class="card__logo">
+          <div class="card__time">20:00 PM</div>
+          <hr class="card__divider">
+        </li>
+  
+        <!-- Encuentro 2 -->
+        <li class="card__match">
+          <img src="/assets/img/logos/L (3).png" alt="Logo Equipo C" class="card__logo">
+          <span class="card__team">FÉNIX FC</span>
+          <span class="card__vs">VS</span>
+          <span class="card__team">GLADIADORES</span>
+          <img src="/assets/img/logos/L (4).png" alt="Logo Equipo D" class="card__logo">
+          <div class="card__time">22:00 PM</div>
+          <hr class="card__divider">
+        </li>
+  
+        <!-- Encuentro 3 -->
+        <li class="card__match">
+          <img src="/assets/img/logos/L (5).png" alt="Logo Equipo E" class="card__logo">
+          <span class="card__team">HURACANES</span>
+          <span class="card__vs">VS</span>
+          <span class="card__team">FURIA CELESTE</span>
+          <img src="/assets/img/logos/L (6).png" alt="Logo Equipo F" class="card__logo">
+          <div class="card__time">18:30 PM</div>
+          <hr class="card__divider">
+        </li>
+  
+        <!-- Encuentro 4 -->
+        <li class="card__match">
+          <img src="/assets/img/logos/L (7).png" alt="Logo Equipo G" class="card__logo">
+          <span class="card__team">JAGUARES FC</span>
+          <span class="card__vs">VS</span>
+          <span class="card__team">LEONES FC</span>
+          <img src="/assets/img/logos/L (8).png" alt="Logo Equipo H" class="card__logo">
+          <div class="card__time">19:45 PM</div>
+          <hr class="card__divider">
+        </li>
+  
+        <!-- Encuentro 5 -->
+        <li class="card__match">
+          <img src="/assets/img/logos/L (9).png" alt="Logo Equipo I" class="card__logo">
+          <span class="card__team">TOROS ROJOS</span>
+          <span class="card__vs">VS</span>
+          <span class="card__team">LOBOS GRISES</span>
+          <img src="/assets/img/logos/L (10).png" alt="Logo Equipo J" class="card__logo">
+          <div class="card__time">21:15 PM</div>
+        </li>
+      </ul>
+  
+      <!-- Botón Ver Encuentros Anteriores -->
+      <button class="card__button">Ver encuentros anteriores</button>
     </div>
-  </header>
 
-  <main class="content">
-    <section class="section">
-      <div class="card card--matches">
-        <h2 class="card__title">HOY</h2>
-        <p class="card__date">30 de noviembre</p>
-        <ul class="card__list">
-          <li class="card__item">
-            <span>18:30</span>
-            <img src="assets/img/logos/L (1).png" alt="Logo Equipo A" class="card__team-logo">
-            <span class="card__team-name">Equipo A</span> VS
-            <span class="card__team-name">Equipo B</span>
-            <img src="assets/img/logos/L (10).png" alt="Logo Equipo B" class="card__team-logo">
-          </li>
-          <!-- Más enfrentamientos -->
-          <li class="card__item">
-            <span>18:30</span>
-            <img src="assets/img/logos/L (2).png" alt="Logo Equipo A" class="card__team-logo">
-            <span class="card__team-name">Equipo A</span> VS
-            <span class="card__team-name">Equipo B</span>
-            <img src="assets/img/logos/L (3).png" alt="Logo Equipo B" class="card__team-logo">
-          </li>
-          <!-- Más enfrentamientos -->
-          <li class="card__item">
-            <span>18:30</span>
-            <img src="assets/img/logos/L (4).png" alt="Logo Equipo A" class="card__team-logo">
-            <span class="card__team-name">Equipo A</span> VS
-            <span class="card__team-name">Equipo B</span>
-            <img src="assets/img/logos/L (5).png" alt="Logo Equipo B" class="card__team-logo">
-          </li>
-        </ul>
-        <a href="partidos.html" class="card__link">Ver más detalles</a>
-      </div>
-
-      <div class="card card--standings">
-        <h2 class="card__title">Top 8 Equipos</h2>
-        <ul class="card__list">
-          <li class="card__item">
-            <span class="card__position">1</span>
-            <img src="assets/img/logos/L (19).png" alt="Logo Equipo 1" class="card__team-logo">
-            <span class="card__team-name">Equipo 1</span>
-            <span class="card__points">25 pts</span>
-          </li>
-          <!-- Más posiciones -->
-        </ul>
-        <a href="tabla.html" class="card__link">Ver más detalles</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__text">© 2024 Torneo de Voleibol</p>
-  </footer>
-
-  <script>
-    // Establece la fecha actual
-    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
-  </script>
 </body>
 
 </html>

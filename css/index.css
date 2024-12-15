@@ -7,10 +7,14 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   font-family: 'Arial', sans-serif;
   color: var(--text-color);
-  background-color: var(--background);
+  background-color: #05051D;
 }
 
 *{
@@ -18,117 +22,130 @@ body {
   padding: 0;
 }
 
+/* Navbar */
 .navbar {
-  padding: 1rem;
-  background-color: var(--card-bg);
-  border-bottom: 1px solid var(--card-border);
-}
-
-.navbar__container {
+  width: 100%;
+  background-color: #05061B;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #433e62;
 }
 
+/* Contenedor del contenido del navbar */
+.navbar__content {
+  text-align: center;
+}
+
+/* Texto con gradiente */
 .navbar__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #AA6EFF, #FC668A, #FDCB7D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0;
 }
 
-.navbar__links {
-  display: flex;
-  gap: 1rem;
-}
 
-.navbar__link {
-  color: var(--text-color);
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 0.5rem;
-}
-
-.navbar__link:hover {
-  color: var(--primary);
-}
-
-.content {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1rem;
-  display: grid;
-  gap: 2rem;
-}
-
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-}
-
+/* Bloque principal */
 .card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 8px;
-  padding: 1.5rem;
-  flex: 1;
-  min-width: 300px;
-  max-width: 48%;
+  background-color: #1E1E2E;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 1rem;
+  border: 0.5px solid #433e62;
+
 }
 
+/* Título */
 .card__title {
-  font-size: 1.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #FF8A75; /* Color del título */
 }
 
+/* Fecha */
 .card__date {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin: 10px 0 20px;
+  color: #A0A0B0;
 }
 
-.card__list {
+/* Lista de partidos */
+.card__matches {
   list-style: none;
   padding: 0;
   margin: 0;
-  
 }
 
-.card__item {
+/* Encuentro individual */
+.card__match {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
-.card__team-logo {
-  width: 40px;
-  height: 40px;
+.card__logo {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  object-fit: contain;
 }
 
-.card__link {
-  display: inline-block;
-  margin-top: 1rem;
-  color: var(--primary);
-  text-decoration: none;
+.card__team {
+  color: #bbbbd5;
   font-weight: bold;
-}
-
-.card__link:hover {
-  text-decoration: underline;
-}
-
-.footer {
+  flex: 1;
   text-align: center;
-  padding: 1rem;
-  background-color: var(--card-bg);
-  border-top: 1px solid var(--card-border);
 }
 
-.footer__text {
-  margin: 0;
-  color: var(--text-color);
+.card__vs {
+  color: #FDCB7D; /* Color dorado para "VS" */
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.card__time {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  width: 100%;
+  color: #A0A0B0;
+  text-align: center;
+}
+
+.card__divider {
+  border: none;
+  border-top: 1px solid #433e62;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Botón */
+.card__button {
+  background: linear-gradient(to right, #AA6EFF, #FC668A, #FDCB7D);
+  color: #000; /* Texto oscuro para contraste */
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none; /* Si es un enlace */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+  transition: all 0.3s ease;
+}
+
+.card__button:hover {
+  transform: scale(1.05);
 }
