@@ -60,13 +60,14 @@ body {
   max-width: 600px;
   text-align: center;
   margin-top: 1rem;
+  margin-bottom: 1.5rem;
   border: 0.5px solid #433e62;
 
 }
 
 /* Título */
 .card__title {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: 0;
   color: #FF8A75; /* Color del título */
@@ -75,7 +76,7 @@ body {
 /* Fecha */
 .card__date {
   font-size: 1rem;
-  margin: 10px 0 20px;
+  margin: 5px 0 20px;
   color: #A0A0B0;
 }
 
@@ -96,8 +97,8 @@ body {
 }
 
 .card__logo {
-  width: 45px;
-  height: 45px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   object-fit: contain;
 }
@@ -144,6 +145,64 @@ body {
   cursor: pointer;
   text-decoration: none; /* Si es un enlace */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+  transition: all 0.3s ease;
+}
+
+.card__button:hover {
+  transform: scale(1.05);
+}
+
+/* TABLA DE POSOCIONES */
+.card__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.card__table-header {
+  background-color: #292A3E;
+  color: #FF8A75;
+  font-weight: bold;
+}
+
+.card__table-header th {
+  padding: 10px;
+  text-align: center;
+}
+
+.card__table-row {
+  border-bottom: 1px solid #433e62;
+}
+
+.card__table-number,
+.card__table-logo,
+.card__table-name {
+  padding: 10px;
+  text-align: center;
+  color: #bbbbd5;
+}
+
+.card__logo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Botón */
+.card__button {
+  background: linear-gradient(to right, #AA6EFF, #FC668A, #FDCB7D);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
