@@ -22,6 +22,7 @@ body {
   padding: 0;
 }
 
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -36,7 +37,11 @@ body {
 
 /* Contenedor del contenido del navbar */
 .navbar__content {
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Texto con gradiente */
@@ -49,6 +54,10 @@ body {
   margin: 0;
 }
 
+.logo{
+  width: 40px;
+  margin-right: 15px;
+}
 
 /* Bloque principal */
 .card {
